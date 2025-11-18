@@ -6,6 +6,54 @@
     box-sizing: border-box;
 }
 
+ body{
+    font-family: "Montserrat", sans-serif;;
+    font-size: 10px;
+ }
+
+ a{
+    text-decoration: none;
+    color: white;
+ }
+
+ li {
+    list-style: none;
+ }
+
+ /***** MAIN SECTION********/
+
+ /*"header" della main section*/
+.upgrade{
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+}
+
+a.btn{
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+ /* categorie*/
+
+ .category-list{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+ }
+
+.category-list li{
+    flex-shrink: 0;
+}
+
+
 
 /****debug***/
 
