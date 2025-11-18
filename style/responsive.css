@@ -1,6 +1,19 @@
 @media screen and (max-width: 878px) {
 
-    li{
+    .category-list{
+    width: 80%;
         color: brown;
     }    
+}
+
+
+@media screen and (max-width: 480px) {
+    
+    .menu{
+        width: 50px;
+    }
+
+    .main-section{
+        flex-basis: calc(100% - 50px);
+    }
 }

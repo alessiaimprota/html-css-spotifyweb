@@ -40,9 +40,13 @@ a.btn{
 }
  /* categorie*/
 
+ section{
+    margin: 0 30px;
+ }
+
  .category-list{
-    margin: 0 auto;
-    width: 70%;
+    margin: 20px auto;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     gap: 10px;
@@ -53,7 +57,36 @@ a.btn{
     flex-shrink: 0;
 }
 
+h1 {
+    font-size: 30px;
+    margin: 20px 0px;
+}
 
+.cards-container{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.card{
+    text-align: center;
+}
+
+.card img{
+    width: 180px;
+    height: 180px
+}
+
+.card span{
+    display: block;
+    margin: 10px 0;
+}
+
+.song-title{
+    font-size: 16px;
+    font-weight: 600;
+}
 
 /****debug***/
 
@@ -80,14 +113,6 @@ a.btn{
     height: 100px;
 }
 
-@media screen and (max-width: 480px) {
-    
-    .menu{
-        width: 50px;
-    }
 
-    .main-section{
-        flex-basis: calc(100% - 50px);
-    }
-}
+
 
