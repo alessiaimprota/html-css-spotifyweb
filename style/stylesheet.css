@@ -192,8 +192,6 @@ i.icon-card{
 }
 
 
-
-
 .container-logo{
     height: 100px;
     display: flex;
@@ -223,6 +221,12 @@ i.icon-card{
     gap: 15px;
 }
 
+
+.img-aside{
+    width: 30px;
+    filter: brightness(50%);
+}
+
 .menu-playlist {
     padding-top: 30px;
 }
@@ -236,26 +240,61 @@ i.icon-card{
     padding-bottom: 10px;
 }
 
-i.download-aside{
-    font-size: 15px;
-    padding-left: 3px;
-    color: gray;
+.download-aside img{
+    width: 20px;
+    padding-right: 5px;
 }
 
+
+.list-aside a{
+    display: flex;
+    align-items: center;
+}
 
 .list-aside a:hover{
     color: white;
 }
 
+.list-aside a:hover .img-aside{
+    filter: none;
+}
+
+
+.user{
+    margin-bottom: 15px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .name-user {
     color: white;
     font-size: 16px;
+    padding-left: 5px;
+}
+
+.user-image{
+    width: 100%;    
+    background-color: gray;    
+    border: 1px white solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.user-image-container{
+    height: 25px;
+    width: 25px;
+
 }
 
 .border{
     border: 1px gray solid;
     width: 80%;
 }
+
 /****debug***/
 
 
