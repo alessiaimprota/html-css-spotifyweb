@@ -17,11 +17,32 @@
 
 @media screen and (max-width: 552px) {
     
+    
+    
+    /*aside*/
     .aside{
         width: 50px;
     }
 
+    .hidden{
+        display: none;
+    }
+
+    .showup{
+        display: inline;
+        margin: 0 auto;
+    }
+    
+    .container-logo{
+        padding: 0;
+    }
+
+
+    /*main section*/
     .main-section{
         flex-basis: calc(100% - 50px);
     }
+
+
+
 }

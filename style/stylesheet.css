@@ -127,6 +127,9 @@ h1 {
     height: 40%;
 }
 
+.showup {
+    display: none;
+}
 /****debug***/
 
 .container{
@@ -137,7 +140,7 @@ h1 {
 
 .aside{
     height: 100%;
-    background-color: beige;
+    background-color: rgba(0, 0, 0, 0.623);
     width: 250px;
 }
 
