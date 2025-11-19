@@ -2,11 +2,14 @@
 
     .category-list{
     width: 80%;
-        color: brown;
     }
     
     .card{
     flex-basis: calc(100% / 4 - (50px / 4));
+}
+
+.category-list li {
+    padding: 0 10px;
 }
 
 }
