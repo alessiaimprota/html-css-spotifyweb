@@ -22,13 +22,16 @@ body{
 
 a{
      text-decoration: none;
-     color: white;
+     color: gray;
     }
     
 li {
         list-style: none;
     }
-    
+
+    .font-white , .song-title {
+        color: white;
+    }
     /***** MAIN SECTION********/
     
     /*"header" della main section*/
@@ -86,11 +89,15 @@ section{
     flex-wrap: wrap;
 }
 
+.category-list a:hover {
+    color: white;
+}
+
 .category-list li{
     flex-shrink: 0;
 }
 
-h1 {
+h1 , h3 {
     font-size: 30px;
     margin: 10px 0px;
     color: white;
@@ -138,29 +145,30 @@ h1 {
 
 }
 
-.card img:hover{
-    filter: brightness(50%);
-}
 
 .container-card-img{
     position: relative;
 }
 
-.icon-card{
+i.icon-card{
     width: 100%;
     font-size: 60px;
-    color: rgb(99, 47, 47);
+    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: none;
 }
 
-.icon-card:hover{
+.container-card-img:hover i.icon-card {
     display: block;
-    z-index: 50px;
 }
 
+.card:hover .container-card-img img{
+    filter: brightness(50%);
+} 
 
 
 /***********ASIDE*************/
@@ -220,12 +228,16 @@ h1 {
     padding-bottom: 10px;
 }
 
-
-.download-aside{
-    font-size: 10px;
+i.download-aside{
+    font-size: 20px;
+    padding-left: 3px;
     color: gray;
 }
 
+
+.list-aside a:hover{
+    color: white;
+}
 /****debug***/
 
 
