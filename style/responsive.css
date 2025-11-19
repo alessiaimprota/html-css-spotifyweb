@@ -19,22 +19,29 @@
     
     
     
-    /*aside*/
-    .aside{
-        width: 50px;
-    }
-
+    /*******************aside***************/
+    /*utility*/
     .hidden{
-        display: none;
-    }
+            display: none;
+        }
 
-    .showup{
-        display: inline;
-        margin: 0 auto;
-    }
-    
-    .container-logo{
-        padding: 0;
+        /*menù aside*/
+        .aside{
+            width: 50px;
+        }
+        
+        .container-logo{
+            padding: 0;
+        }
+        .showup{
+            display: inline;
+            margin: 0 auto;
+            width: 70%;
+        }
+        
+
+    .aside nav i{
+        width: 100%;
     }
 
 
