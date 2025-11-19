@@ -9,9 +9,6 @@
     flex-basis: calc(100% / 4 - (50px / 4));
 }
 
-    .card img{
-        min-width: 100px;
-    }
 }
 
 
@@ -39,11 +36,9 @@
             width: 70%;
         }
         
-
-    .aside nav i{
-        width: 100%;
-    }
-
+        .list-aside{
+            align-items: center;
+        }
 
     /*main section*/
     .main-section{
