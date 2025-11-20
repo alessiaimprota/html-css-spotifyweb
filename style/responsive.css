@@ -48,6 +48,18 @@
         flex-basis: calc(100% - 50px);
     }
 
+    .wrapper-player{
+        gap: 30px;
+    }
+
+    .wrapper-song{
+        gap: 20px;
+    }
+
+    .media-volume-icons{
+        gap: 0;
+    }
+
 
 
 }
