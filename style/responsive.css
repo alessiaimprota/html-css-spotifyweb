@@ -12,6 +12,14 @@
     padding: 0 10px;
 }
 
+.side-footer{
+    width: 30%;
+}
+
+.player-icons i{
+    margin: 0;
+    font-size: 20px;
+}
 }
 
 
@@ -60,5 +68,19 @@
         gap: 0;
     }
 
+    .player-icons i{
+    margin: 0;
+    font-size: 18px;
+}
 
+    .song-info .song-title{
+        font-size: 10px ;
+     }
+
+     .song-info span{
+        font-size: 10px;
+     }
+     .song-info img{
+        min-width: 40%;
+     }
 }

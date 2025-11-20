@@ -314,7 +314,7 @@ i.icon-card{
 
 
 footer i{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .wrapper-player{
@@ -327,11 +327,20 @@ footer i{
     gap: 10px;
 }
 
-.wrapper-song{
-    width: 30%;
+.side-footer{
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.side-footer i:hover{
+    color:white;
+}
+
+.song-title-player:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 .song-info{
@@ -342,7 +351,7 @@ footer i{
 }
 
 .song-info img{
-    max-width: 20%;
+    width: 20%;
 }
 
 .favorites i{
@@ -357,6 +366,25 @@ footer i{
     align-items: center;
     gap: 20px; 
     flex-shrink: 1;
+}
+
+.player-icons i{
+    font-size: 25px;
+    color: white;
+    margin: 0 5px;
+}
+
+#main-icon-player{
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+#main-icon-player:hover{
+    font-size: 35px;
+}
+
+.player .main-icon.player{
+color: white;
 }
 
 .false-player{
@@ -407,13 +435,6 @@ footer i{
 
 
 
-
-.media-volume{
-    min-width: 30%;
-    display: flex;   
-    justify-content: start;
-    
-}
 
 .media-volume-icons{
     display: flex;
