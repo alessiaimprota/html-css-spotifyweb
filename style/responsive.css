@@ -58,16 +58,16 @@
 
   /*footer*/
 
-  .side-footer{
-    margin-left: 0;
-  }
-  
   .wrapper-player {
     gap: 30px;
   }
 
   .wrapper-song {
     gap: 20px;
+  }
+
+  .side-footer{
+    margin-left: 0;
   }
 
   .media-volume-icons {

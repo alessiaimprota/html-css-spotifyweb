@@ -339,7 +339,7 @@ footer i {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 10px ;
+  margin-left: 10px;
 }
 
 .side-footer i:hover {
@@ -356,7 +356,7 @@ footer i {
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 15px;  
 }
 
 .song-info img {
