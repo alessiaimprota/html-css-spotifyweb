@@ -354,7 +354,39 @@ footer i{
     width: 50%;
     height: 3px;
     background-color: gray;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
+
+.border-player-time{
+    width: 20%;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+
+.control-media{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    display: none;
+}
+
+
+.false-player:hover .border-player-time{
+    background-color: greenyellow;
+}
+
+.false-player:hover .control-media{
+    display: block;
+}
+
+
 
 
 
