@@ -328,12 +328,10 @@ footer i{
 }
 
 .wrapper-song{
-    height: 100%;
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-shrink: 1;
 }
 
 .song-info{
@@ -411,17 +409,13 @@ footer i{
 
 
 .media-volume{
-    width: 30%;
+    min-width: 30%;
     display: flex;   
     justify-content: start;
     
 }
 
-.media-player .false-player .border-player{
-    min-width: 50px;
-}
-
 .media-volume-icons{
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
