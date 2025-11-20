@@ -1,86 +1,92 @@
 @media screen and (max-width: 878px) {
-
-    .category-list{
+  /*category*/
+  .category-list {
     width: 80%;
-    }
-    
-    .card{
-    flex-basis: calc(100% / 4 - (50px / 4));
-}
-
-.category-list li {
+  }
+  .category-list li {
     padding: 0 10px;
-}
+  }
+  /*card*/
+  .card {
+    flex-basis: calc(100% / 4 - (50px / 4));
+  }
 
-.side-footer{
+  /*footer media query*/
+  .side-footer {
     width: 30%;
-}
+  }
 
-.player-icons i{
+  .player-icons i {
     margin: 0;
     font-size: 20px;
+  }
 }
-}
-
 
 @media screen and (max-width: 552px) {
-    
-    
-    
-    /*******************aside***************/
-    /*utility*/
-    .hidden{
-            display: none;
-        }
 
-        /*menù aside*/
-        .aside{
-            width: 50px;
-        }
-        
-        .container-logo{
-            padding: 0;
-        }
-        .showup{
-            display: inline;
-            margin: 0 auto;
-            width: 70%;
-        }
-        
-        .list-aside{
-            align-items: center;
-        }
+  
+  /*******************aside***************/
 
-    /*main section*/
-    .main-section{
-        flex-basis: calc(100% - 50px);
-    }
+  /*utility*/
 
-    .wrapper-player{
-        gap: 30px;
-    }
+  .hidden {
+    display: none;
+  }
 
-    .wrapper-song{
-        gap: 20px;
-    }
+  /*menù aside*/
+  .aside {
+    width: 50px;
+  }
 
-    .media-volume-icons{
-        gap: 0;
-    }
+  .container-logo {
+    padding: 0;
+  }
+  .showup {
+    display: inline;
+    margin: 0 auto;
+    width: 70%;
+  }
 
-    .player-icons i{
+  .list-aside {
+    align-items: center;
+  }
+
+  /*main section*/
+  .main-section {
+    flex-basis: calc(100% - 50px);
+  }
+
+  /*footer*/
+
+  .side-footer{
+    margin-left: 0;
+  }
+  
+  .wrapper-player {
+    gap: 30px;
+  }
+
+  .wrapper-song {
+    gap: 20px;
+  }
+
+  .media-volume-icons {
+    gap: 0;
+  }
+
+  .player-icons i {
     margin: 0;
     font-size: 18px;
-}
+  }
 
-    .song-info .song-title{
-        font-size: 10px ;
-     }
+  .song-info .song-title {
+    font-size: 10px;
+  }
 
-     .song-info span{
-        font-size: 10px;
-     }
-     .song-info img{
-        min-width: 40%;
-     }
+  .song-info span {
+    font-size: 10px;
+  }
+  .song-info img {
+    min-width: 40%;
+  }
 }
