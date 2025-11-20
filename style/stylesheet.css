@@ -4,23 +4,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    }
 
-body{
+
+
+/***********GENERAL**************/
+
+body {
     font-family: "Montserrat", sans-serif;;
     font-size: 12px;
     font-weight: 700;
     color: rgb(95, 95, 95);
-}
+    }
 
 
-.container{
+.container {
     height: calc(100vh - 100px);
     display: flex;
-}
+    }
 
 
-a{
+a {
      text-decoration: none;
      color: gray;
     }
@@ -32,11 +36,21 @@ li {
     .font-white , .song-title {
         color: white;
     }
-    /***** MAIN SECTION********/
+
+
+
+/***** MAIN SECTION********/
     
-    /*"header" della main section*/
+.main-section {
+    background-color:  hsl(219 26% 11% / 1);
+    overflow-y: scroll;
+    flex-basis: calc(100% - 250px);
+    }   
+
+
+    /**UPGRADE BAR**/
     
-    .upgrade{
+.upgrade {
         position: sticky;
         top: 0;
         height: 100px;
@@ -50,125 +64,124 @@ li {
         z-index: 1000;
     }
     
-    a.btn{
+a.btn {
     border: 1px solid white;
     padding: 10px 30px;
     border-radius: 20px;
-}
+    }
 
-    a.btn:hover {
-        font-size: 16px;
-        padding: 15px 35px;
+a.btn:hover {
+        font-size: 14px;
+        padding: 10px 30px;
         border-radius: 30px;
     }
 
-/* categorie*/
+    /**** SECTIONS GENERAL RULE*****/
 
-
-.main-section{
-    background-color:  hsl(219 26% 11% / 1);
-    overflow-y: scroll;
-    flex-basis: calc(100% - 250px);
-}
-
-section{
+section {
     padding:0 20px;
-}
+    }
 
- .category{
+
+    /**CATEGORIES**/
+
+
+.category {
      width: 100%;
      display: flex;
      justify-content: center;
     margin-top: 20px;
-}
+    }
 
 
-.category-list{
+.category-list {
     width: 60%;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-}
+    }
+    
+
+
+    /******CATEGORY HOVER********/
+
 
 .category-list a:hover {
     color: white;
     padding-bottom: 10px;
-}
+    }   
 
-.border-hover{
+.border-hover {
     border: 1px solid greenyellow;
     width: 60%;
     margin: 0 auto;
     margin-top: 5px;
     display: none;
-}
+    }
 
-.category-list a:hover .border-hover{
+.category-list a:hover .border-hover {
     display: block;
-}
+    }
 
 
-.category-list li{
-    flex-shrink: 0;
-}
+
+    /*****CARDs SECTION******/
 
 h1 , h3 {
     font-size: 30px;
     margin: 10px 0px;
     color: white;
-}
+    }
 
-.selection-music{
+.selection-music {
     margin: 30px 0;
-}
+    }
 
-.cards-container{
+.cards-container {
     width: 100%;
     display: flex;
     flex-wrap:wrap;
     justify-content: flex-start;
     margin: 20px 0; 
     gap: 10px;  
-}
+    }
 
-.card{
+.card {
     flex-basis: calc(100% / 6 - (50px / 6));
     text-align: center;
-}
+    }
 
-.card img{
+.card img {
     width: 100%; 
     height: auto;
     display: block; 
     min-width: 150px;
-}
+    }
 
 
-.card span{
+.card span {
     display: block;
     margin: 10px 0;
-}
+    }
 
 .song-title{
     font-size: 16px;
     font-weight: 600;
-}
+    }
 
 .round-card{
     border-radius: 50%;
-}
+    }   
 
 .artist-name{
     color: gray;
     font-weight: 400;
-
-}
-
+    }
 
 .container-card-img{
     position: relative;
-}
+    }
 
 i.icon-card{
     width: 100%;
@@ -180,20 +193,23 @@ i.icon-card{
     transform: translate(-50%, -50%);
     z-index: 200;
     display: none;
-}
+    }
 
+
+/********HOVER CARD**********/
 .container-card-img:hover i.icon-card {
     display: block;
-}
+    }
 
 .container-card-img:hover img{
     filter: brightness(50%);
-} 
+    }    
 
 
 /***********ASIDE*************/
 
-.aside{
+/*******GENERAL RULES ASIDE********/
+.aside {
     background-color: rgb(0, 0, 0);;
     height: 100%;    
     width: 250px;
@@ -204,15 +220,16 @@ i.icon-card{
     font-size: 25px;
 }
 
+/********LOGO ASIDE******/
 
-.container-logo{
+.container-logo {
     height: 100px;
     display: flex;
     align-items: center;
     padding: 0 10px;
 }
 
-.container-logo img{
+.container-logo img {
     height: 40%;
 }
 
@@ -220,6 +237,7 @@ i.icon-card{
     display: none;
 }
 
+/***ASIDE-WRAPPER*****/
 .aside-wrapper{
     height: calc(100% - 100px);
     display: flex;
@@ -228,50 +246,54 @@ i.icon-card{
     padding: 0 20px;
 }
 
-.list-aside{
+
+/***LISTS****/
+
+/***MENU LIST**/
+.list-aside {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
+.list-aside a {
+    display: flex;
+    align-items: center;
+}
 
 .img-aside{
     width: 30px;
     filter: brightness(50%);
 }
 
+/***PLAYLISTS**/
+
 .menu-playlist {
     padding-top: 30px;
 }
 
-.menu-playlist li:first-child{
+.menu-playlist li:first-child {
     font-size: 16px;
 }
 
-.menu-playlist h3{
+.menu-playlist h3 {
     font-size: 16px;
     padding-bottom: 10px;
 }
 
-.download-aside img{
-    width: 20px;
-    padding-right: 5px;
-}
 
-
-.list-aside a{
-    display: flex;
-    align-items: center;
-}
-
-.list-aside a:hover{
+/****LISTS HOVER**/
+.list-aside a:hover {
     color: white;
 }
 
-.list-aside a:hover .img-aside{
-    filter: none;
+.list-aside a:hover .img-aside {
+    filter: none; 
 }
 
+
+
+/****BOTTOM ASIDE****/
 
 .user{
     margin-bottom: 15px;
@@ -309,14 +331,25 @@ i.icon-card{
 }
 
 
+.download-aside img{
+    width: 20px;
+    padding-right: 5px;
+}
 
-/**********footer*************/
 
 
-footer i{
+
+
+/*********"FOOTER"*************/
+
+/*** "FOOTER" GENERAL RULE*****/
+
+footer i {
     font-size: 15px;
 }
 
+
+/******WRAPPER PLAYER********/
 .wrapper-player{
     background-color: hsl(0deg 0% 15.69%);;
     height: 100px;
@@ -327,6 +360,8 @@ footer i{
     gap: 10px;
 }
 
+
+/****SIDES RULES****/
 .side-footer{
     width: 15%;
     display: flex;
@@ -338,6 +373,8 @@ footer i{
     color:white;
 }
 
+
+/***SONG SIDE 1***/
 .song-title-player:hover{
     color: white;
     text-decoration: underline;
@@ -358,6 +395,16 @@ footer i{
     margin: 5px 0;
 }
 
+/***VOLUME SIDE**/
+
+.media-volume-icons{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+/****PLAYER*****/
 .player{
     width: 40%;
     display: flex;
@@ -379,12 +426,16 @@ footer i{
     margin: 0 10px;
 }
 
-#main-icon-player:hover{
-    font-size: 35px;
-}
+
 
 .player .main-icon.player{
 color: white;
+}
+
+
+.timestamp{
+    color: white;
+    font-weight: 400;
 }
 
 .false-player{
@@ -422,6 +473,7 @@ color: white;
     display: none;
 }
 
+/****PLAYER HOVER***/
 
 .false-player:hover .border-player-time{
     background-color: greenyellow;
@@ -431,12 +483,6 @@ color: white;
     display: block;
 }
 
-
-
-
-
-
-.media-volume-icons{
-    display: flex;
-    gap: 5px;
+#main-icon-player:hover{
+    font-size: 35px;
 }
