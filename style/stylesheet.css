@@ -301,6 +301,10 @@ i.icon-card{
 /**********footer*************/
 
 
+footer i{
+    font-size: 20px;
+}
+
 .wrapper-player{
     background-color: hsl(0deg 0% 15.69%);;
     height: 100px;
@@ -332,8 +336,25 @@ i.icon-card{
 .player{
     width: 60%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; 
+}
+
+.false-player{
+    width: 100%;
+    display: flex;
     justify-content: center;
-    gap: 20px;   
+    align-items: center;
+    gap: 10px;
+}
+
+.border-player{
+    width: 50%;
+    height: 3px;
+    background-color: gray;
+    border-radius: 5px;
 }
 
 
