@@ -93,9 +93,21 @@ section{
 
 .category-list a:hover {
     color: white;
-    border-bottom: greenyellow 2px solid;
     padding-bottom: 10px;
 }
+
+.border-hover{
+    border: 1px solid greenyellow;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5px;
+    display: none;
+}
+
+.category-list a:hover .border-hover{
+    display: block;
+}
+
 
 .category-list li{
     flex-shrink: 0;
